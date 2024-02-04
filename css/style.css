@@ -1,0 +1,62 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-text {
+  animation: moveUpDown 2s infinite; /* You can adjust the animation duration */
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px); /* You can adjust the distance */
+  }
+}
+
+
+.img-js {
+  width: 500px; /* You can set the dimensions to whatever you want */
+  height: 400px;
+  object-fit: cover;
+}
+
+.img-logo{
+  width: 100px; /* You can set the dimensions to whatever you want */
+  height: 100px;
+  object-fit: cover;
+}
+
+.img-logo-exp{
+  width: 10%;
+  height: 10%;
+  object-fit: cover;
+}
+
+.hover-animate {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-animate:hover {
+  transform: scale(1.05);
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
