@@ -10,7 +10,6 @@
     
 <!-- jQuery and JS bundle w/ Popper.js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -165,78 +164,158 @@
   </div>
 </section>
 
- <!-- Projects Section -->
  <section id="Projects">
   <div class="container mt-5">
     <h2 class="display-5 fw-normal text-center">Projects <i class="bi bi-code h1"></i></h2>
-    <div class="row g-4">
-      <!-- Box 1 -->
-      <div class="col-md-6">
-       <div class="card hover-animate"> 
-        <div class="card"> 
-         <h5 class="card-header py-3 text-center">Bilge</h5>
-          <div class="card-body">
-            <p class="card-text">A complete social media platform for android which question and answer discussion</p>
-            <p class="card-text">Dart , Flutter , Firebase</p>
-            <a href="https://github.com/ymerta/bilge_sosyal_medya" class="btn-primary"><i class="bi bi-link h5">See the Project</i></a>
-            <img class="img-js" src="images/bilgess.png" alt="mobile" style="width:100%">
+
+    <div class="accordion" id="projectAccordion">
+
+      <!-- Web Development -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingWeb">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb" aria-expanded="true" aria-controls="collapseWeb">
+            🌐 Web Development
+          </button>
+        </h2>
+        <div id="collapseWeb" class="accordion-collapse collapse show" aria-labelledby="headingWeb" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card hover-animate">
+                  <h5 class="card-header py-3 text-center">Tourist Guide Website Frontend</h5>
+                  <div class="card-body">
+                    <p class="card-text">Frontend website for Türkiye travel guide</p>
+                    <p class="card-text">HTML, CSS</p>
+                    <a href="https://ymerta.github.io/tourist-guide-website-static/" class="btn btn-outline-primary mb-2">
+                      <i class="bi bi-link"></i> See the Project
+                    </a>
+                    <img src="images/guide.png" alt="Tourist Website" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-       </div>
       </div>
 
-      <!-- Box 2 -->
-      <div class="col-md-6">
-       <div class="card hover-animate">
-        <div class="card">
-         <h5 class="card-header py-3 text-center">UDP Load Balancer</h5>
-          <div class="card-body">
-            <p class="card-text">This project aims to explore the functionality of a UDP (User Datagram Protocol) load balancer. Operating at the transport layer (layer 4) in the OSI model, the UDP load balancer receives client requests and efficiently distributes them among three designated servers. The fundamental process involves receiving, distributing, and aggregating server responses to be sent back to the client. </p>
-            <p class="card-text">Python</p>            
-            <a href="https://github.com/ymerta/udp-loader" class="btn-primary"><i class="bi bi-link h5">See the Project</i></a>
-            <img class="img-js" src="images/23132.png" alt="udp" style="width:100%">
-          </div>
-        </div>
-       </div>
-      </div>
-   
-         <!-- Box 3 -->
-         <div class="col-md-6">
-          <div class="card hover-animate"> 
-           <div class="card">
-            <h5 class="card-header py-3 text-center">ThreeJS Museum</h5>
-             <div class="card-body">
-              <p class="card-text">The last project of my computer graphics course was to create a museum using ThreeJS.</p>
-              <p class="card-text">Javascript , ThreeJS , NodeJS</p>
-              <a href="https://github.com/ymerta/ThreeJS-Museum" class="btn-primary"><i class="bi bi-link h5">See the Project</i></a>
-              <img class="img-js" src="images/threejs.png" alt="museum" style="width:100%">
-             </div>
-           </div>
-          </div>
-        </div>
-      
-      <!-- Box 4 -->
-      <div class="col-md-6">
-       <div class="card hover-animate">
-        <div class="card">
-         <h5 class="card-header py-3 text-center">Tourist Guide Website Frontend</h5>
-          <div class="card-body">  
-            <p class="card-text">A website which includes the frontend development of tourist guide website for Türkiye</p>
-            <p class="card-text">HTML , CSS</p>
-            <a href="https://ymerta.github.io/tourist-guide-website-static/" class="btn-primary"><i class="bi bi-link h5">See the Project</i></a>
-            <img class="img-js" src="images/guide.png" alt="guide" style="width:100%">
-            
-            <!--<a href="https://ymerta.github.io/tourist-guide-website-frontend/" class="btn-primary">
-            
-            <i class="bi bi-link"></i>            </a>-->
-    
+      <!-- Mobile Development -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingMobile">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMobile" aria-expanded="false" aria-controls="collapseMobile">
+            📱 Mobile Development
+          </button>
+        </h2>
+        <div id="collapseMobile" class="accordion-collapse collapse" aria-labelledby="headingMobile" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card hover-animate">
+                  <h5 class="card-header py-3 text-center">Bilge</h5>
+                  <div class="card-body">
+                    <p class="card-text">Social media Q&A platform built with Flutter</p>
+                    <p class="card-text">Dart, Flutter, Firebase</p>
+                    <a href="https://github.com/ymerta/bilge_sosyal_medya" class="btn btn-outline-primary mb-2">
+                      <i class="bi bi-link"></i> See the Project
+                    </a>
+                    <img src="images/bilgess.png" alt="Bilge App" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-     </div>
+
+      <!-- Game / Graphics -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingGraphics">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGraphics" aria-expanded="false" aria-controls="collapseGraphics">
+            🕹️ Game / Graphics
+          </button>
+        </h2>
+        <div id="collapseGraphics" class="accordion-collapse collapse" aria-labelledby="headingGraphics" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card hover-animate">
+                  <h5 class="card-header py-3 text-center">ThreeJS Museum</h5>
+                  <div class="card-body">
+                    <p class="card-text">Virtual museum made with ThreeJS</p>
+                    <p class="card-text">JavaScript, ThreeJS, NodeJS</p>
+                    <a href="https://github.com/ymerta/ThreeJS-Museum" class="btn btn-outline-primary mb-2">
+                      <i class="bi bi-link"></i> See the Project
+                    </a>
+                    <img src="images/threejs.png" alt="Museum" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Network & Systems -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNetwork">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNetwork" aria-expanded="false" aria-controls="collapseNetwork">
+            🖧 Network & System Programming
+          </button>
+        </h2>
+        <div id="collapseNetwork" class="accordion-collapse collapse" aria-labelledby="headingNetwork" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card hover-animate">
+                  <h5 class="card-header py-3 text-center">UDP Load Balancer</h5>
+                  <div class="card-body">
+                    <p class="card-text">Distributes UDP requests to servers</p>
+                    <p class="card-text">Python, Sockets</p>
+                    <a href="https://github.com/ymerta/udp-loader" class="btn btn-outline-primary mb-2">
+                      <i class="bi bi-link"></i> See the Project
+                    </a>
+                    <img src="images/23132.png" alt="UDP Diagram" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingML">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseML" aria-expanded="false" aria-controls="collapseML">
+            🤖 Machine Learning / Deep Learning
+          </button>
+        </h2>
+        <div id="collapseML" class="accordion-collapse collapse" aria-labelledby="headingML" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card hover-animate">
+                  <h5 class="card-header py-3 text-center">Image Super Resolution</h5>
+                  <div class="card-body">
+                    <p class="card-text">Low-light image enhancement using U-Net and GAN</p>
+                    <p class="card-text">Python, TensorFlow, EnlightenGAN</p>
+                    <a href="#" class="btn btn-outline-primary mb-2">
+                      <i class="bi bi-link"></i> See the Project
+                    </a>
+                    <img src="images/sample-ml.png" alt="ML Project" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <!-- Başka ML projen varsa buraya ekleyebilirim -->
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
+
  <!-- Contact Section -->
   <section id="Contact">
     <div class="container">
@@ -296,8 +375,14 @@
       </div>
     </section>
   <!-- Bootstrap JS and jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-bOMKUI6Xtg6Q4l5t0fSDFbPxZ8s4uR95Rd5SJegVoEJN9bdSmz/TekN3i7ZxJ+aJ" crossorigin="anonymous"></script>
+<script 
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  crossorigin="anonymous"></script>
+
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+  crossorigin="anonymous"></script>
+""
 </body>
   
 </html>
